@@ -1,9 +1,11 @@
 ﻿using Caliburn.Micro;
 using HolidayEmulator.EndPoint;
+using HolidayEmulator.Messages;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.ServiceModel;
 using System.Threading.Tasks;

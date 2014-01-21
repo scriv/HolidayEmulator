@@ -63,6 +63,8 @@ namespace HolidayEmulator
         {
             Dispatcher.Invoke(() =>
                 {
+                    Debug.WriteLine(string.Concat("{\"lights\":[", string.Join(",", message.LightColours.Select(c => string.Concat("\"", c.ToString(), "\""))), "]}"));
+
                     var lights = ((Canvas)this.Cloud.Parent).Children.OfType<Ellipse>().ToArray();
 
                     for (int i = 0; i < 50; i++)
